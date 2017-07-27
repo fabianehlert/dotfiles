@@ -5,7 +5,10 @@ export ZSH=/Users/Fabian/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+
+export PATH=$PATH:/usr/local/Cellar
+export PATH=$PATH:/usr/local/Caskroom
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -49,7 +52,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git osx ruby zsh-autosuggestions)
 
 # User configuration
 
@@ -57,6 +60,9 @@ plugins=(git zsh-autosuggestions)
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+
+# https://github.com/rupa/z
+. ~/.oh-my-zsh/custom/z.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -83,4 +89,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# optionally set DEFAULT_USER in ~/.zshrc to your regular username to hide the “user@hostname” info when you’re logged in as yourself on your local machine.
+DEFAULT_USER="Fabian"
+prompt_context(){}
+
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export GEM_HOME=/Users/Fabian/.gem

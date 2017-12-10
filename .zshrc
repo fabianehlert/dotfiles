@@ -12,7 +12,7 @@ DEFAULT_USER="fabian"
 export PATH=$PATH:/usr/local/Cellar
 export PATH=$PATH:/usr/local/Caskroom
 
-ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="false"
 COMPLETION_WAITING_DOTS="true"
 
 # Plugins

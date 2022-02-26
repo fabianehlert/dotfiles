@@ -18,8 +18,7 @@ source $ZSH/oh-my-zsh.sh
 # Path
 export PATH="/opt/homebrew:$PATH"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-# "$(gem environment gemdir)/bin"
-export PATH="/opt/homebrew/lib/ruby/gems/3.0.0/bin:$PATH"
+export PATH="$(gem environment gemdir):$PATH"
 
 # Rosetta
 alias mzsh="arch -arm64 zsh"

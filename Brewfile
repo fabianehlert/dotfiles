@@ -1,6 +1,6 @@
 # 'brew install'
 brew "git"
-brew "ruby"
+brew "rbenv"
 brew "swiftlint"
 brew "xcbeautify"
 

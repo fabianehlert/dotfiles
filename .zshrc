@@ -15,20 +15,8 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git macos ruby zsh-autosuggestions zsh-syntax-highlighting z)
 source $ZSH/oh-my-zsh.sh
 
-# Path
+# Brew
 export PATH="/opt/homebrew:$PATH"
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-export PATH="$(gem environment gemdir):$PATH"
 
-# Rosetta
-alias mzsh="arch -arm64 zsh"
-alias izsh="arch -x86_64 zsh"
-
-if [ "$(uname -p)" = "i386" ]; then
-  echo "Running in i386 mode (Rosetta)"
-  eval "$(/usr/local/homebrew/bin/brew shellenv)"
-  alias brew='/usr/local/homebrew/bin/brew'
-else
-  eval "$(/opt/homebrew/bin/brew shellenv)"
-  alias brew='/opt/homebrew/bin/brew'
-fi
+# Ruby
+export PATH="$HOME/.rbenv/shims:$PATH"

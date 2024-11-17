@@ -6,3 +6,4 @@ brew "xcbeautify"
 
 # 'brew install --cask'
 cask "provisionql"
+cask "xcodes"

@@ -52,6 +52,7 @@ defaults write com.apple.dock wvous-br-modifier -int 0
 
 # Xcode Defaults
 defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
+defaults write com.apple.CoreSimulator EnableDefaultSetCreation -bool NO
 
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"

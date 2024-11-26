@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Get the list of all booted simulator device IDs
+booted_simulators=$(xcrun simctl list devices | grep -i "Booted" | grep -oE "([0-9A-Fa-f\-]{36})")
+
+# Check if any simulators are booted
+if [ -z "$booted_simulators" ]; then
+    echo "No booted simulators found."
+    exit 1
+fi
+
+echo "Setting 09:41, Full WiFi, Full Cellular, 100% Battery for all booted simulators..."
+
+# Loop through each booted simulator and apply the configurations
+for simulator_id in $booted_simulators; do
+    # Set the status bar to the desired state
+    xcrun simctl status_bar "$simulator_id" override \
+        --time "09:41" \
+        --batteryState charged --batteryLevel 100 \
+        --wifiBars 3 \
+        --cellularBars 4
+
+    if [ $? -eq 0 ]; then
+        echo "Successfully configured simulator: $simulator_id"
+    else
+        echo "Failed to configure simulator: $simulator_id"
+    fi
+done
+
+echo "Done!"

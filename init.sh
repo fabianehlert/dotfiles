@@ -14,6 +14,9 @@ cp .vimrc ~/.vimrc
 cp .gitconfig ~/.gitconfig
 cp .gitignore_global ~/.gitignore_global
 
+# Copy bin
+cp -r bin/* /usr/local/bin
+
 # Create Developer directory
 mkdir ~/Developer
 

@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# Heavily inspired by: https://github.com/mathiasbynens/dotfiles/blob/main/.macos
-
 # Ask for the administrator password upfront
 sudo -v
 
@@ -13,6 +11,7 @@ cp .zshrc ~/.zshrc
 cp .vimrc ~/.vimrc
 cp .gitconfig ~/.gitconfig
 cp .gitignore_global ~/.gitignore_global
+cp .spaceshiprc.zsh ~/.spaceshiprc.zsh
 
 # Copy bin
 cp -r bin/* /usr/local/bin

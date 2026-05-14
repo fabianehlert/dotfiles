@@ -12,6 +12,7 @@ cp .vimrc ~/.vimrc
 cp .gitconfig ~/.gitconfig
 cp .gitignore_global ~/.gitignore_global
 cp .spaceshiprc.zsh ~/.spaceshiprc.zsh
+cp ./Ghostty/config ~/.config/ghostty/config
 
 # Copy bin
 cp -r bin/* /usr/local/bin

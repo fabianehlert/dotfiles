@@ -1,0 +1,46 @@
+# Location: ~/.config/ghostty/config
+# Reload config changes: CMD + Shift + ,
+# ghostty +list-themes
+
+# Font
+font-family = JetBrains Mono
+font-family = Symbols Nerd Font Mono
+font-size = 13
+font-thicken = true
+font-thicken-strength = 0
+adjust-cell-height = 2
+
+# Theme
+theme = Raycast Dark
+background-opacity = 0.95
+background-blur = 20
+selection-background = #3a5a8a
+selection-foreground = #ffffff
+
+# Window
+window-width = 110
+window-height = 32
+window-padding-x = 12
+window-padding-y = 8
+window-padding-balance = true
+macos-titlebar-style = tabs
+unfocused-split-opacity = 0.4
+
+# Cursor
+cursor-style = bar
+cursor-style-blink = true
+adjust-cursor-thickness = 2
+shell-integration-features = no-cursor,title,sudo
+
+# Behavior
+copy-on-select = false
+confirm-close-surface = false
+mouse-hide-while-typing = true
+
+# Launch
+working-directory = home
+tab-inherit-working-directory = false
+window-inherit-working-directory = false
+
+# Keybindings
+keybind = global:cmd+alt+space=toggle_visibility

@@ -12,10 +12,13 @@ adjust-cell-height = 2
 
 # Theme
 theme = Raycast Dark
+background = #121212
 background-opacity = 0.95
 background-blur = 20
 selection-background = #3a5a8a
 selection-foreground = #ffffff
+palette = 3=#ffd73f
+palette = 11=#ffe47e
 
 # Window
 window-width = 110
@@ -23,7 +26,6 @@ window-height = 32
 window-padding-x = 12
 window-padding-y = 8
 window-padding-balance = true
-macos-titlebar-style = tabs
 unfocused-split-opacity = 0.4
 
 # Cursor
@@ -34,12 +36,13 @@ shell-integration-features = no-cursor,title,sudo
 
 # Behavior
 copy-on-select = false
+selection-clear-on-copy = false
 confirm-close-surface = false
 mouse-hide-while-typing = true
 
 # Launch
-working-directory = home
 tab-inherit-working-directory = false
+window-save-state = always
 window-inherit-working-directory = false
 
 # Keybindings
